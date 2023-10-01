@@ -9,23 +9,25 @@
 </head>
 
 <body>
-  <main>
+  <header>
     <nav>
       <div>
-        <img src="/images/logo.svg" alt="">
+        <a href="/">
+          <img src="/images/logo.svg" alt="">
+        </a>
       </div>
       <ul>
-        <li>About</li>
-        <li>Discover</li>
-        <li>Get Started</li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Discover</a></li>
+        <li><a href="/">Get Started</a></li>
       </ul>
     </nav>
-    <header class="product-img">
-      <picture>
-        <source media="(min-width:640px)" srcset="/images/image-hero-desktop.jpg" />
-        <img src="/images/image-hero-mobile.jpg" alt="header image">
-      </picture>
-    </header>
+  </header>
+  <main>
+    <picture aria-label="Mastercraft bamboo monitor riser product image">
+      <source media="(min-width:640px)" srcset="/images/image-hero-desktop.jpg"/>
+      <img src="/images/image-hero-mobile.jpg" alt="Mastercraft bamboo monitor riser product image">
+    </picture>
     <div class="container">
       <section class="crowdfund-header">
         <img src="/logo-mastercraft.svg" alt="Mastercraft logo">
@@ -33,10 +35,16 @@
         <p class="text-secondary">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
         <div class="flex-between">
           <button class="btn">Back this project</button>
-          <label for="bookmark">
-            <img src="/images/icon-bookmark.svg" alt="bookmark icon">
-          </label>
           <input style="display: none;" id="bookmark" type="checkbox">
+          <label for="bookmark">
+            <!-- <img src="/images/icon-bookmark.svg" alt="bookmark icon"> -->
+            <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
+              <g fill="none" fill-rule="evenodd">
+                <circle id="circle" fill="currentColor" cx="28" cy="28" r="28" />
+                <path id="bookmark" fill="currentColor" d="M23 19v18l5-5.058L33 37V19z" />
+              </g>
+            </svg>
+          </label>
         </div>
       </section>
       <section class="crowdfund-stats">
@@ -50,14 +58,11 @@
       <section class="crowdfund-details">
         <h2 class="text-lg">About this project</h2>
         <p class="text-secondary">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates
-          your screen to a more
-          comfortable viewing height. Placing your monitor at eye level has the potential to improve your posture and
-          make
-          you more comfortable while at work, helping you stay focused on the task at hand.</p>
+          your screen to a more comfortable viewing height. Placing your monitor at eye level has the potential to
+          improve your posture and make you more comfortable while at work, helping you stay focused on the task at
+          hand.</p>
         <p class="text-secondary">Featuring artisan craftsmanship, the simplicity of design creates extra desk space
-          below your computer to
-          allow
-          notepads, pens, and USB sticks to be stored under the stand.</p>
+          below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
         <section class="contribution-cards">
           <div class="card">
             <div class="card-header">
@@ -65,8 +70,7 @@
               <p>Pledge $25 or more</p>
             </div>
             <p class="text-secondary"> You get an ergonomic stand made of natural bamboo. You've helped us launch our
-              promotional campaign, and
-              you’ll be added to a special Backer member list.</p>
+              promotional campaign, and you’ll be added to a special Backer member list.</p>
             <div class="flex-between">
               <p>101 <span class="text-secondary">left</span></p>
               <button class="btn">Select Reward</button>
@@ -78,8 +82,7 @@
               <p>Pledge $75 or more</p>
             </div>
             <p class="text-secondary"> You get a Black Special Edition computer stand and a personal thank you. You’ll
-              be added to our Backer
-              member list. Shipping is included.</p>
+              be added to our Backer member list. Shipping is included.</p>
             <div class="flex-between">
               <p>64 <span class="text-secondary">left</span></p>
               <button class="btn">Select Reward</button>
@@ -91,8 +94,7 @@
               <p>Pledge $200 or more</p>
             </div>
             <p class="text-secondary"> You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal
-              thank you. You’ll be added
-              to our Backer member list. Shipping is included.</p>
+              thank you. You’ll be added to our Backer member list. Shipping is included.</p>
             <div class="flex-between">
               <p>0 <span class="text-secondary">left</span></p>
               <button disabled class="btn-no-stock">Out of stock</button>
@@ -165,6 +167,11 @@
       <button class="btn">Got it!</button>
     </div> -->
   </main>
+  <!-- <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/atmahana" target="_blank">Zubair Adham</a>.
+  </footer> -->
   <!-- <div id="app"></div> -->
   <script type="module" src="/main.js"></script>
 </body>
