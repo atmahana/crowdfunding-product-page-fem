@@ -25,7 +25,7 @@ const closeModalBtn = document.querySelector("#close-modal-btn");
 let currentSelectedIndex = 0,
   width = screen.width,
   isMobileMenuOpen = false,
-  menuIconUrl = "/public/images/icon-hamburger.svg";
+  menuIconUrl = "/images/icon-hamburger.svg";
 
 if (width < 640) {
   const menuButton = createMenuButton();
@@ -39,8 +39,8 @@ if (width < 640) {
   mobileMenuButton.addEventListener("click", () => {
     isMobileMenuOpen = !isMobileMenuOpen;
     isMobileMenuOpen
-      ? (menuIconUrl = "/public/images/icon-close-menu.svg")
-      : (menuIconUrl = "/public/images/icon-hamburger.svg");
+      ? (menuIconUrl = "/images/icon-close-menu.svg")
+      : (menuIconUrl = "/images/icon-hamburger.svg");
 
     if (isMobileMenuOpen) {
       navMenu.style.display = "flex";
